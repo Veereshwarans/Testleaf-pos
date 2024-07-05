@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const URL_PREFIX = process.env.REACT_APP_IS_PROD ?
   process.env.REACT_APP_PROD_URL_PREFIX :
-  "http://20.244.36.194/api";
+  "http://20.244.98.176/api";
 
 const apiBuilder = mainRouteName => ({
   fetchById: id => axios.get(`${URL_PREFIX}/${mainRouteName}/${id}`),
